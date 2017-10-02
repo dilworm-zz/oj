@@ -4,6 +4,8 @@
 #         self.val = x
 #         self.next = None
 
+# 遍历获取长度len
+# 遍历左边left 和 right , left == right 则为回文数字 
 def isPalindrome(head):
     """
     :type head: ListNode
