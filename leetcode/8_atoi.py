@@ -28,7 +28,7 @@ def myAtoi(str):
     if newstr[0] != "+" and newstr[0] != "-" and (newstr[0] < "0" or newstr[0] > "9"):
         return 0
     else:
-        trimstr=str[0]
+        trimstr=newstr[0]
 
     for n in xrange(1, slen):
         if newstr[n] < "0" or newstr[n] > "9":
@@ -36,7 +36,7 @@ def myAtoi(str):
         else:
             trimstr = trimstr + newstr[n]
 
-    print("trim ", trimstr)
+    #print("trim ", trimstr)
     if len(trimstr) == 1 and (trimstr[0] == "+" or trimstr[0] == "-"):
         return 0
 
